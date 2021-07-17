@@ -47,9 +47,6 @@ http.createServer((request, response) => {
             }, (1000 * 60 * 60) * hours)
         }
         if(/start/gi.test(msg.text)) {
-            fetch('https://transerfer.herokuapp.com/')
-                .then(response => response.json())
-                .then(json => console.log(json))
             return
         }
         switch (msg.text) {
