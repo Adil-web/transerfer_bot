@@ -78,7 +78,7 @@ http.createServer((request, response) => {
                     bot.sendMessage(id, msg.text)
                     break;
             }
-            if(/черный/gi.test(msg.text)) {
+            if(/Адиль черный/gi.test(msg.text)) {
                 bot.sendSticker(id, 'CAACAgIAAxkBAAECl0tg8pGndFDpxClqPUXr9D5Iz-GOZwACuAADHEwXNf-uzxqylPi2IAQ')
                 return
             }
