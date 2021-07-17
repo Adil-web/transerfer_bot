@@ -82,6 +82,10 @@ http.createServer((request, response) => {
                 bot.sendSticker(id, 'CAACAgIAAxkBAAECl0tg8pGndFDpxClqPUXr9D5Iz-GOZwACuAADHEwXNf-uzxqylPi2IAQ')
                 return
             }
+            if(/Абай лысый/gi.test(msg.text)) {
+                bot.sendSticker(id, 'CAACAgIAAxkBAAECl7hg8v3YoJkp4D2EQMKQlajl00gPeAAC6wADHEwXNUzXJcLnYtk6IAQ')
+                return
+            }
     })
 }).listen(process.env.PORT || 5000)
 
