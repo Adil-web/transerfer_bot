@@ -21,9 +21,6 @@ const principles = [
     ['6. «Отпустить свою хватку и позволить миру двигаться по течению вариантов»'],
     ['7. «Всякое отражение воспринимать как позитивное»']]
 
-http.createServer((request, response) => {
-    console.log('request starting for ');
-    console.log(request);
     bot.onText(/\/start/, function onStartText(msg) {
         const { id, first_name: userName } = msg.chat
         const opts = {
@@ -74,6 +71,3 @@ http.createServer((request, response) => {
             bot.sendMessage(id, 'Извините такой команды не существует...')
         }
     })
-}).listen(process.env.PORT || 5000)
-
-console.log('Server running at http://127.0.0.1:5000/');
