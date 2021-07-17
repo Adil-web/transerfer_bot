@@ -34,7 +34,7 @@ bot.onText(/\/start/, function onStartText(msg) {
 
 bot.on('message', msg => {
     const { id } = msg.chat
-    if(/start/gi.test(msg.text)) {
+    if(/test/gi.test(msg.text)) {
         setInterval(() => {
             bot.sendMessage(id, summary[roundMatch(summary.length - 1, 0)])
         }, (1000 * 60 * 60) * hours)
