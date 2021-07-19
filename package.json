@@ -13,6 +13,7 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {
-    "node-telegram-bot-api": "^0.53.0"
+    "node-telegram-bot-api": "^0.53.0",
+    "pm2": "^5.1.0"
   }
 }
